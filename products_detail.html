@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Template</title>
+		
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=yes,maximum-scale=5.0,minimum-scale=1.0">
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+
+		<link rel="icon" href="images/favicon.ico" type="image/favicon">
+		<link rel="stylesheet" href="css/animate.css">
+		<link rel="stylesheet" href="css/edit.css">
+		<link rel="stylesheet" href="css/cms-header.css">
+		<link rel="stylesheet" href="css/cms-index.css">
+		<link rel="stylesheet" href="css/cms-footer.css">
+		<link rel="stylesheet" href="css/font-awesome/css/all.css">
+	</head>
+
+	<body>
+		<header>
+			<div class="header-menu-top">
+				<div class="menu-bg-top">
+					<a href="index.html" class="logo">
+						<img src="images/logo.png" alt="">
+					</a>
+					<div class="menu-button">
+				        <a href="#" class="fas fa-bars"></a>
+						<a href="#" class="fas fa-times"></a>
+				    </div>
+				</div>
+			    <div class="menu-bg"></div>
+				<nav class="menu menuBasic">
+					<ul class="menu-group">
+						<li class="inquiry">
+							<a href="#">
+								<picture>
+									<source srcset="images/icon/inquiry-rwd.png" media="(max-width: 1024px)">
+									<img src="images/icon/inquiry.png" alt="">
+								</picture>
+							</a>
+						<span class="inquiry_no" id="cart-nums">0</span></li>
+						<li class="menu-search">
+						    <form name="search_form" action="#" method="post">
+						        <a class="search-a" href="#" onclick="chk();">
+					        		<picture>
+										<source srcset="images/icon/search-rwd.png" media="(max-width: 1024px)">
+										<img src="images/icon/search.png" alt="">
+									</picture>
+						        </a>
+						        <div class="search-btn">
+					        		<picture>
+										<source srcset="images/icon/search-rwd.png" media="(max-width: 1024px)">
+										<img src="images/icon/search.png" alt="">
+									</picture>
+					        	</div>
+						        <input type="text" name="pro_name" value="" class="">
+						    </form>
+						</li>
+						<li class="menu-language">
+							<div class="menu-language-btn">
+								<picture>
+									<source srcset="images/icon/lang-rwd.png" media="(max-width: 1024px)">
+									<img src="images/icon/lang.png" alt="">
+								</picture>
+							</div>
+							<div class="menu-language-options">
+								<a href="#">English</a>
+							</div>
+							<div class="menu-language-mobile">
+								<a href="#">EN</a>
+							</div>
+						</li>
+					</ul>
+					<ul class="menu-main">
+						<li>
+							<a href="products.html">Products</a>
+							<div class="menu-all" id="menu-pro">
+								<div class="menu-block-all">
+					                <div>
+					                    <ul class="menu-list">
+					                        <li>
+					                        	<a href="products_detail.html">
+					                        		<div><img src="images/menu-logo/menu-logo-01.png" alt=""></div>
+					                        		<div>CNC Lathes</div>
+					                        	</a>
+					                        </li>
+					                        <li>
+					                        	<a href="products_detail.html">
+					                        		<div><img src="images/menu-logo/menu-logo-02.png" alt=""></div>
+					                        		<div>CNC Slant Bed Lathes</div>
+					                        	</a>
+					                        </li>
+					                        <li>
+					                        	<a href="products_detail.html">
+					                        		<div><img src="images/menu-logo/menu-logo-03.png" alt=""></div>
+					                        		<div>Conventional Lathes</div>
+					                        	</a>
+					                        </li>
+					                        <li>
+					                        	<a href="products_detail.html">
+					                        		<div><img src="images/menu-logo/menu-logo-04.png" alt=""></div>
+					                        		<div>Variable Speed Lathes</div>
+					                        	</a>
+					                        </li>
+					                        <li>
+					                        	<a href="products_detail.html">
+					                        		<div><img src="images/menu-logo/menu-logo-05.png" alt=""></div>
+					                        		<div>Clutch Lathes</div>
+					                        	</a>
+					                        </li>
+					                        <li>
+					                        	<a href="products_detail.html">
+					                        		<div><img src="images/menu-logo/menu-logo-06.png" alt=""></div>
+					                        		<div>Vertical Milling /Turning</div>
+					                        	</a>
+					                        </li>
+					                        <li>
+					                        	<a href="products_detail.html">
+					                        		<div><img src="images/menu-logo/menu-logo-07.png" alt=""></div>
+					                        		<div>High Speed Machine Center</div>
+					                        	</a>
+					                        </li>
+					                        <li>
+					                        	<a href="products_detail.html">
+					                        		<div><img src="images/menu-logo/menu-logo-08.png" alt=""></div>
+					                        		<div>Grinding Machine</div>
+					                        	</a>
+					                        </li>
+					                    </ul>
+					                </div>
+					            </div>
+							</div>
+						</li>
+						<li>
+							<a href="application.html">Application</a>
+							<div class="menu-all" id="menu-app">
+								<div class="menu-block-all">
+					                <div>
+					                    <ul class="menu-list">
+					                        <li>
+					                        	<a href="application.html">
+					                        		<div><img src="images/menu-logo/app-logo-01.png" alt=""></div>
+					                        		<div>Aerospace</div>
+					                        	</a>
+					                        </li>
+					                        <li>
+					                        	<a href="application.html">
+					                        		<div><img src="images/menu-logo/app-logo-02.png" alt=""></div>
+					                        		<div>Energy</div>
+					                        	</a>
+					                        </li>
+					                        <li>
+					                        	<a href="application.html">
+					                        		<div><img src="images/menu-logo/app-logo-03.png" alt=""></div>
+					                        		<div>Steelwork</div>
+					                        	</a>
+					                        </li>
+					                        <li>
+					                        	<a href="application.html">
+					                        		<div><img src="images/menu-logo/app-logo-04.png" alt=""></div>
+					                        		<div>Railway</div>
+					                        	</a>
+					                        </li>
+					                        <li>
+					                        	<a href="application.html">
+					                        		<div><img src="images/menu-logo/app-logo-05.png" alt=""></div>
+					                        		<div>Oil & Gas</div>
+					                        	</a>
+					                        </li>
+					                        <li>
+					                        	<a href="application.html">
+					                        		<div><img src="images/menu-logo/app-logo-06.png" alt=""></div>
+					                        		<div>Roller</div>
+					                        	</a>
+					                        </li>
+					                        <li>
+					                        	<a href="application.html">
+					                        		<div><img src="images/menu-logo/app-logo-07.png" alt=""></div>
+					                        		<div>Naval</div>
+					                        	</a>
+					                        </li>
+					                        <li>
+					                        	<a href="application.html">
+					                        		<div><img src="images/menu-logo/app-logo-08.png" alt=""></div>
+					                        		<div>Industrial machinery</div>
+					                        	</a>
+					                        </li>
+					                        <li>
+					                        	<a href="application.html">
+					                        		<div><img src="images/menu-logo/app-logo-09.png" alt=""></div>
+					                        		<div>Flange</div>
+					                        	</a>
+					                        </li>
+					                    </ul>
+					                </div>
+					            </div>
+							</div>
+						</li>
+						<li><a href="solution.html">Customized Solution</a></li>
+						<li><a href="company.html">Company</a></li>
+						<li><a href="news.html">News</a></li>
+						<li><a href="faq.html">FAQ</a></li>
+						<li><a href="contact.html">Contact Us</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		
+		<main class="main">
+			<div class="in-banner_s">
+				<img src="images/banner/app-banner.jpg" alt="">
+			</div>
+
+			<article class="wrap">
+				<div class="breadcrumb">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="products_list.html">Products</a></li>
+						<li>CNC Lathes</li>
+					</ul>
+				</div>
+			</article>
+
+			<div class="container">
+				<article class="wrap">
+					<h1>CNC Lathes</h1>
+				</article>
+				<div class="wrapper">
+					<article class="wrap">
+						<section class="products-detail-block-all">
+							<div class="products-detail-des">
+								<div>
+									<img src="images/products/products-logo/products-logo-01.png" alt="">
+								</div>
+								<div>
+									<div class="title">CNC Lathes</div>
+									<div>DY-1600C~1900C (BED 888MM)</div>
+								</div>
+							</div>
+							<div class="products-detail-block">
+								<div class="products-sidebar-btn">
+									MENU <i class="fas fa-chevron-down"></i>
+								</div>
+								<div class="products-sidebar-mobile">
+									<div class="products-sidebar">
+										<ul class="pro-icon-list">
+											<li>
+												<a href="#">Characteristics</a>
+											</li>
+											<li>
+												<a href="#">Specification</a>
+											</li>
+											<li>
+												<a href="#">Photos</a>
+											</li>
+											<li>
+												<a href="#">Video</a>
+											</li>
+											<li>
+												<a href="#">Accessories</a>
+											</li>
+											<li>
+												<a href="#">Download</a>
+											</li>
+											<li>
+												<a href="#">Inquery</a>
+											</li>
+										</ul>
+										<ul class="pro-icon-btn">
+											<li>
+												<a href="#" class="pro-icon-btn01"><img src="images/products/products-icon/products_icon08.png" alt=""></a>
+											</li>
+											<li>
+												<a href="#" class="pro-icon-btn02"><img src="images/products/products-icon/products_icon09.png" alt=""></a>
+											</li>
+											<li>
+												<a href="products_list.html" class="pro-icon-btn03"><img src="images/products/products-icon/products_icon10.png" alt=""></a>
+											</li>
+										</ul>
+									</div>
+								</div>
+					
+								<div class="products-detail-right">
+								    <div class="pro-pic">
+								        <div>
+											<ul class="rslides" id="slider1">
+												<li>
+													<a class="venobox" data-gall="gall1" title="" href="images/products/products_detail-b01.png">
+														<img src="images/products/products_detail-b01.png" alt="">
+													</a>
+												</li>
+												<li>
+													<a class="venobox" data-gall="gall1" title="" href="images/products/products_detail-s02.jpg">
+														<img src="images/products/products_detail-s02.jpg" alt="">
+													</a>
+												</li>
+												<li>
+													<a class="venobox" data-gall="gall1" title="" href="images/products/products_detail-s03.jpg">
+														<img src="images/products/products_detail-s03.jpg" alt="">
+													</a>
+												</li>
+												<li>
+													<a class="venobox" data-gall="gall1" title="" href="images/products/products_detail-s04.jpg">
+														<img src="images/products/products_detail-s04.jpg" alt="">
+													</a>
+												</li>
+												<li>
+													<a class="venobox" data-gall="gall1" title="" href="images/products/products_detail-s05.jpg">
+														<img src="images/products/products_detail-s05.jpg" alt="">
+													</a>
+												</li>
+												<li>
+													<a class="venobox" data-gall="gall1" title="" href="images/products/products_detail-s06.jpg">
+														<img src="images/products/products_detail-s06.jpg" alt="">
+													</a>
+												</li>
+												<li>
+													<a class="venobox" data-gall="gall1" title="" href="images/products/products_detail-s06.jpg">
+														<img src="images/products/products_detail-s06.jpg" alt="">
+													</a>
+												</li>
+											  </ul>
+											  <div class="pro-s">
+												  <div id="slider1-pager" class="slider responsive3">
+												  	<div class="fix-pic">
+												  		<a href="#">
+															<figure class="pic">
+																<img src="images/products/products_detail-b01.png">
+															</figure>
+														</a>
+													</div>
+													<div class="fix-pic">
+												  		<a href="#">
+															<figure class="pic">
+																<img src="images/products/products_detail-s02.jpg">
+															</figure>
+														</a>
+													</div>
+													<div class="fix-pic">
+												  		<a href="#">
+															<figure class="pic">
+																<img src="images/products/products_detail-s03.jpg">
+															</figure>
+														</a>
+													</div>
+													<div class="fix-pic">
+												  		<a href="#">
+															<figure class="pic">
+																<img src="images/products/products_detail-s04.jpg">
+															</figure>
+														</a>
+													</div>
+													<div class="fix-pic">
+												  		<a href="#">
+															<figure class="pic">
+																<img src="images/products/products_detail-s05.jpg">
+															</figure>
+														</a>
+													</div>
+													<div class="fix-pic">
+												  		<a href="#">
+															<figure class="pic">
+																<img src="images/products/products_detail-s06.jpg">
+															</figure>
+														</a>
+													</div>
+													<div class="fix-pic">
+												  		<a href="#">
+															<figure class="pic">
+																<img src="images/products/products_detail-s06.jpg">
+															</figure>
+														</a>
+													</div>
+												</div>
+											  </div>
+										</div>
+								    </div>
+								</div>
+							</div>
+						</section>
+					</article>
+					<section class="products-detail-content">
+						<div id="parentHorizontalTab">
+							<article class="wrap">
+								<ul class="products-detail-intro-list resp-tabs-list hor_1">
+									<li>
+										Characteristics
+									</li>
+									<li>
+										Specification
+									</li>
+									<li>
+										Photos
+									</li>
+									<li>
+										Video
+									</li>
+									<li>
+										Accessories
+									</li>
+									<li>
+										Download
+									</li>
+								</ul>
+							</article>
+							<div class="products-detail-intro">
+								<article class="wrap">
+									<div class="resp-tabs-container hor_1">
+										<div class="detail-intro"></div>
+										<div class="detail-intro">
+											<div class="table_scroll">
+												<table class="datatable" border="0" cellspacing="0" cellpadding="0">
+													<tbody>
+														<tr>
+															<th colspan="2">MODEL</th>
+															<th>DY-2800C</th>
+															<th>DY-3000C</th>
+															<th>DY-3200C</th>
+															<th>DY-3400C</th>
+															<th>DY-3600C</th>
+														</tr>
+														<tr>
+															<td rowspan="3" class="title">Machining Capability</td>
+															<td class="left">Distance Between Centers</td>
+															<td colspan="5">2000 mm ~ 40000 mm</td>
+														</tr>
+														<tr>
+															<td class="left">Swing Over Bed</td>
+															<td>2800 mm</td>
+															<td>3000 mm</td>
+															<td>3200 mm</td>
+															<td>3400 mm</td>
+															<td>3600 mm</td>
+														</tr>
+														<tr>
+															<td class="left">Swing Over Cross Slide</td>
+															<td>2400 mm</td>
+															<td>2600 mm</td>
+															<td>2800 mm</td>
+															<td>3000 mm</td>
+															<td>3200 mm</td>
+														</tr>
+														<tr>
+															<td class="title">Bed</td>
+															<td class="left">Width</td>
+															<td colspan="5">2000 mm</td>
+														</tr>
+														<tr>
+															<td rowspan="3" class="title">Main Spindle</td>
+															<td class="left">Spindle Nose</td>
+															<td rowspan="3" colspan="5">
+																<p>
+																	A2-15, 230 mm: 1 ~ 200 rpm<br>
+																	A2-20, 310 mm: 1 ~ 200 rpm<br>
+																	A2-20, 360 mm: 1 ~ 200 rpm<br>
+																	A2-28, 410 mm: 1 ~ 200 rpm<br>
+																</p>
+															</td>
+														</tr>
+														<tr>
+															<td class="left">Spindle Bore</td>
+														</tr>
+														<tr>
+															<td class="left">Spindle Speed (rpm)</td>
+														</tr>
+														<tr>
+															<td class="title">Travel</td>
+															<td class="left">Cross Travel (X Axis)</td>
+															<td>1400 mm</td>
+															<td>1600 mm</td>
+															<td>1700 mm</td>
+															<td>1800 mm</td>
+															<td>1900 mm</td>
+														</tr>
+														<tr>
+															<td rowspan="7" class="title">Motors</td>
+															<td class="left">Main Motor</td>
+															<td colspan="5">100 hp</td>
+														</tr>
+														<tr>
+															<td class="left">Inverter</td>
+															<td colspan="5">120 hp</td>
+														</tr>
+														<tr>
+															<td class="left">X Axis Servo Motor</td>
+															<td colspan="5">A30 servo motor 5.5 kw / 30 Nm / 4000 rpm</td>
+														</tr>
+														<tr>
+															<td class="left">Z Axis Servo Motor</td>
+															<td colspan="5">A100 servo motor 11 kw / 100 Nm / 2500 rpm</td>
+														</tr>
+														<tr>
+															<td class="left">Oil Pump</td>
+															<td colspan="5">100 W</td>
+														</tr>
+														<tr>
+															<td class="left">Coolant Pump</td>
+															<td colspan="5">450 W, 6 ~ 10 bar</td>
+														</tr>
+														<tr>
+															<td class="left">Hydraulic Tank Pump (Optional)</td>
+															<td colspan="5">3 hp (2.2 kw)</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</div>
+										<div class="detail-intro"></div>
+										<div class="detail-intro"></div>
+										<div class="detail-intro"></div>
+										<div class="detail-intro"></div>
+									</div>
+								</article>
+							</div>
+						</div>
+					
+						<div class="container">
+							<article class="wrap">
+								<section class="related-products">
+									<div class="related-products-title">Related Products</div>
+									<div class="owl-pro02 owl-carousel owl-theme">
+										<div class="item">
+											<div class="fix-pic">
+												<figure class="pic"><img src="images/products/related_products01.jpg" alt=""></figure>
+											</div>
+											<div class="des">
+												<div class="title">CNC Lathe</div>
+												<div class="model">DY-350~510C (BED 305/330MM)</div>
+											</div>
+											<a href="products_detail.html" class="link"></a>
+										</div>
+										<div class="item">
+											<div class="fix-pic">
+												<figure class="pic"><img src="images/products/related_products02.jpg" alt=""></figure>
+											</div>
+											<div class="des">
+												<div class="title">CNC Lathe</div>
+												<div class="model">DY-530~730C (BED 435MM)</div>
+											</div>
+											<a href="products_detail.html" class="link"></a>
+										</div>
+										<div class="item">
+											<div class="fix-pic">
+												<figure class="pic"><img src="images/products/related_products03.jpg" alt=""></figure>
+											</div>
+											<div class="des">
+												<div class="title">CNC Lathe</div>
+												<div class="model">DY-660C~760C (BED 558MM)</div>
+											</div>
+											<a href="products_detail.html" class="link"></a>
+										</div>
+										<div class="item">
+											<div class="fix-pic">
+												<figure class="pic"><img src="images/products/related_products04.jpg" alt=""></figure>
+											</div>
+											<div class="des">
+												<div class="title">CNC Lathe</div>
+												<div class="model">DY-350~510C (BED 305/330MM)</div>
+											</div>
+											<a href="products_detail.html" class="link"></a>
+										</div>
+										<div class="item">
+											<div class="fix-pic">
+												<figure class="pic"><img src="images/products/related_products04.jpg" alt=""></figure>
+											</div>
+											<div class="des">
+												<div class="title">CNC Lathe</div>
+												<div class="model">DY-350~510C (BED 305/330MM)</div>
+											</div>
+											<a href="products_detail.html" class="link"></a>
+										</div>
+									</div>
+								</section>
+							</article>
+						</div>
+					</section>
+				</div>
+			</div>
+		</main>
+		<footer>
+			<div class="wrap">
+				<div class="footer-info-all">
+					<div class="left">
+						<div class="footer-info-title">
+							<div itemscope itemtype="http://schema.org/LocalBusiness">
+								Contacts <span itemprop="name">Annn Yang</span>
+							</div>
+						</div>
+						<ul class="footer-information">
+							<div itemscope itemtype="http://schema.org/PostalAddress">
+								<li class="ft-information-tel"><a href="tel:+886-4-2527-0198"><span itemprop="telephone">+886-4-2527-0198</span></a></li>
+								<li class="ft-information-mail">
+									<p><a href="mailto:cnc@annnyang.com"><span itemprop="email">cnc@annnyang.com</span></a></p>
+									<p><a href="annnyang@ms23.hinet.net"><span itemprop="email">annnyang@ms23.hinet.net</span></a></p>
+								</li>
+								<li class="ft-information-add">
+								<span itemprop="streetAddress">No.62, Feng Gong S Rd.</span>, <span itemprop="addressLocality">Shen Kang Dist.</span>, <span itemprop="addressRegion">Taichung City</span> <span itemprop="postalCode">42942</span>, <span itemprop="addressCountry">Taiwan</span></li>
+								<div class="ft-social">
+									<div><a href="###"><i class="fab fa-facebook-f"></i></a></div>
+									<div><a href="###"><i class="fab fa-youtube"></i></a></div>
+								</div>
+							</div>
+						</ul>
+					</div>
+					<div class="middle">
+						<div class="footer-info-title">
+							Products
+						</div>
+						<ul class="footer-information">
+							<li><a href="#">CNC Lathes</a></li>
+							<li><a href="#">CNC Slant Bed Lathes</a></li>
+							<li><a href="#">Conventional Lathes</a></li>
+							<li><a href="#">Variable Speed Lathes</a></li>
+							<li><a href="#">Clutch Lathes</a></li>
+							<li><a href="#">Vertical Milling / Turning</a></li>
+							<li><a href="#">High Speed Machine Center</a></li>
+							<li><a href="#">Grinding Machine</a></li>
+							<li><a href="#">Accessories</a></li>
+						</ul>
+					</div>
+					<div class="right">
+						<div class="footer-info-title">
+							Information
+						</div>
+						<ul  class="footer-information">
+							<li><a href="application.html">Application</a></li>
+							<li><a href="solution.html">Turning Solution</a></li>
+							<li><a href="company.html">Company</a></li>
+							<li><a href="news.html">News</a></li>
+							<li><a href="faq.html">FAQ</a></li>
+							<li><a href="contact.html">Contact Us</a></li>
+							<li><a href="sitemap.html">Sitemap</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="copyright">
+					Copyright © 2019 High Energy Technology. All Rights Reserved.
+				</div>
+				<a href="#" class="go-top">
+					<img src="images/gotop-btn.png" alt="">
+				</a>
+			</div>
+		</footer>
+
+		<!-- jquery -->
+		<script src="js/jquery-2.1.0.min.js"></script>
+
+		<link rel="stylesheet" href="js/owlcarousel/assets/owl.carousel.min.css">
+		<link rel="stylesheet" href="js/owlcarousel/assets/owl.theme.default.min.css">
+		<script src="js/owlcarousel/owl.carousel.min.js"></script>
+
+		<link rel="stylesheet" href="js/fancybox/jquery.fancybox.min.css">
+		<script src="js/fancybox/jquery.fancybox.min.js"></script>
+
+		<link rel="stylesheet" href="js/slick-master/slick/slick.css">
+		<script src="js/slick-master/slick/slick.js"></script>
+		<script src="js/slick-master/js/scripts.js"></script>
+
+		<link rel="stylesheet" href="js/venobox/venobox.css">
+		<script src="js/venobox/venobox.min.js"></script>
+
+		<link rel="stylesheet" href="js/banner/responsiveslides.css">
+		<link rel="stylesheet" href="js/banner/themes.css">
+		<script src="js/banner/responsiveslides.min.js"></script>
+
+		<link rel="stylesheet" href="js/tab/easy-responsive-tabs.css">
+		<script src="js/tab/easyResponsiveTabs.js"></script>
+
+		<link rel="stylesheet" href="js/aos/aos.css">
+		<script src="js/aos/aos.js"></script>
+		<script>
+		    AOS.init({
+			    easing: 'ease-in-out-sine',
+			    offset:200,
+			    duration:500,
+		    });
+		</script>	
+
+		<script src="js/jsManage.js"></script>
+	</body>
+</html>

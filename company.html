@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Template</title>
+		
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=yes,maximum-scale=5.0,minimum-scale=1.0">
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+
+		<link rel="icon" href="images/favicon.ico" type="image/favicon">
+		<link rel="stylesheet" href="css/animate.css">
+		<link rel="stylesheet" href="css/edit.css">
+		<link rel="stylesheet" href="css/cms-header.css">
+		<link rel="stylesheet" href="css/cms-index.css">
+		<link rel="stylesheet" href="css/cms-footer.css">
+		<link rel="stylesheet" href="css/font-awesome/css/all.css">
+	</head>
+
+	<body>
+		<header>
+			<div class="header-menu-top">
+				<div class="menu-bg-top">
+					<a href="index.html" class="logo">
+						<img src="images/logo.png" alt="">
+					</a>
+					<div class="menu-button">
+				        <a href="#" class="fas fa-bars"></a>
+						<a href="#" class="fas fa-times"></a>
+				    </div>
+				</div>
+			    <div class="menu-bg"></div>
+				<nav class="menu menuBasic">
+					<ul class="menu-group">
+						<li class="inquiry">
+							<a href="#">
+								<picture>
+									<source srcset="images/icon/inquiry-rwd.png" media="(max-width: 1024px)">
+									<img src="images/icon/inquiry.png" alt="">
+								</picture>
+							</a>
+						<span class="inquiry_no" id="cart-nums">0</span></li>
+						<li class="menu-search">
+						    <form name="search_form" action="#" method="post">
+						        <a class="search-a" href="#" onclick="chk();">
+					        		<picture>
+										<source srcset="images/icon/search-rwd.png" media="(max-width: 1024px)">
+										<img src="images/icon/search.png" alt="">
+									</picture>
+						        </a>
+						        <div class="search-btn">
+					        		<picture>
+										<source srcset="images/icon/search-rwd.png" media="(max-width: 1024px)">
+										<img src="images/icon/search.png" alt="">
+									</picture>
+					        	</div>
+						        <input type="text" name="pro_name" value="" class="">
+						    </form>
+						</li>
+						<li class="menu-language">
+							<div class="menu-language-btn">
+								<picture>
+									<source srcset="images/icon/lang-rwd.png" media="(max-width: 1024px)">
+									<img src="images/icon/lang.png" alt="">
+								</picture>
+							</div>
+							<div class="menu-language-options">
+								<a href="#">English</a>
+							</div>
+							<div class="menu-language-mobile">
+								<a href="#">EN</a>
+							</div>
+						</li>
+					</ul>
+					<ul class="menu-main">
+						<li>
+							<a href="products.html">Products</a>
+							<div class="menu-all" id="menu-pro">
+								<div class="menu-block-all">
+					                <div>
+					                    <ul class="menu-list">
+					                        <li>
+					                        	<a href="products_detail.html">
+					                        		<div><img src="images/menu-logo/menu-logo-01.png" alt=""></div>
+					                        		<div>CNC Lathes</div>
+					                        	</a>
+					                        </li>
+					                        <li>
+					                        	<a href="products_detail.html">
+					                        		<div><img src="images/menu-logo/menu-logo-02.png" alt=""></div>
+					                        		<div>CNC Slant Bed Lathes</div>
+					                        	</a>
+					                        </li>
+					                        <li>
+					                        	<a href="products_detail.html">
+					                        		<div><img src="images/menu-logo/menu-logo-03.png" alt=""></div>
+					                        		<div>Conventional Lathes</div>
+					                        	</a>
+					                        </li>
+					                        <li>
+					                        	<a href="products_detail.html">
+					                        		<div><img src="images/menu-logo/menu-logo-04.png" alt=""></div>
+					                        		<div>Variable Speed Lathes</div>
+					                        	</a>
+					                        </li>
+					                        <li>
+					                        	<a href="products_detail.html">
+					                        		<div><img src="images/menu-logo/menu-logo-05.png" alt=""></div>
+					                        		<div>Clutch Lathes</div>
+					                        	</a>
+					                        </li>
+					                        <li>
+					                        	<a href="products_detail.html">
+					                        		<div><img src="images/menu-logo/menu-logo-06.png" alt=""></div>
+					                        		<div>Vertical Milling /Turning</div>
+					                        	</a>
+					                        </li>
+					                        <li>
+					                        	<a href="products_detail.html">
+					                        		<div><img src="images/menu-logo/menu-logo-07.png" alt=""></div>
+					                        		<div>High Speed Machine Center</div>
+					                        	</a>
+					                        </li>
+					                        <li>
+					                        	<a href="products_detail.html">
+					                        		<div><img src="images/menu-logo/menu-logo-08.png" alt=""></div>
+					                        		<div>Grinding Machine</div>
+					                        	</a>
+					                        </li>
+					                    </ul>
+					                </div>
+					            </div>
+							</div>
+						</li>
+						<li>
+							<a href="application.html">Application</a>
+							<div class="menu-all" id="menu-app">
+								<div class="menu-block-all">
+					                <div>
+					                    <ul class="menu-list">
+					                        <li>
+					                        	<a href="application.html">
+					                        		<div><img src="images/menu-logo/app-logo-01.png" alt=""></div>
+					                        		<div>Aerospace</div>
+					                        	</a>
+					                        </li>
+					                        <li>
+					                        	<a href="application.html">
+					                        		<div><img src="images/menu-logo/app-logo-02.png" alt=""></div>
+					                        		<div>Energy</div>
+					                        	</a>
+					                        </li>
+					                        <li>
+					                        	<a href="application.html">
+					                        		<div><img src="images/menu-logo/app-logo-03.png" alt=""></div>
+					                        		<div>Steelwork</div>
+					                        	</a>
+					                        </li>
+					                        <li>
+					                        	<a href="application.html">
+					                        		<div><img src="images/menu-logo/app-logo-04.png" alt=""></div>
+					                        		<div>Railway</div>
+					                        	</a>
+					                        </li>
+					                        <li>
+					                        	<a href="application.html">
+					                        		<div><img src="images/menu-logo/app-logo-05.png" alt=""></div>
+					                        		<div>Oil & Gas</div>
+					                        	</a>
+					                        </li>
+					                        <li>
+					                        	<a href="application.html">
+					                        		<div><img src="images/menu-logo/app-logo-06.png" alt=""></div>
+					                        		<div>Roller</div>
+					                        	</a>
+					                        </li>
+					                        <li>
+					                        	<a href="application.html">
+					                        		<div><img src="images/menu-logo/app-logo-07.png" alt=""></div>
+					                        		<div>Naval</div>
+					                        	</a>
+					                        </li>
+					                        <li>
+					                        	<a href="application.html">
+					                        		<div><img src="images/menu-logo/app-logo-08.png" alt=""></div>
+					                        		<div>Industrial machinery</div>
+					                        	</a>
+					                        </li>
+					                        <li>
+					                        	<a href="application.html">
+					                        		<div><img src="images/menu-logo/app-logo-09.png" alt=""></div>
+					                        		<div>Flange</div>
+					                        	</a>
+					                        </li>
+					                    </ul>
+					                </div>
+					            </div>
+							</div>
+						</li>
+						<li><a href="solution.html">Customized Solution</a></li>
+						<li><a href="company.html">Company</a></li>
+						<li><a href="news.html">News</a></li>
+						<li><a href="faq.html">FAQ</a></li>
+						<li><a href="contact.html">Contact Us</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		
+		<main class="main">
+			<div class="in-banner">
+				<div class="banner-pc">
+					<img src="images/banner/company-banner.jpg" alt="">
+				</div>
+				<div class="banner-mobile">
+					<img src="images/banner/company-banner-rwd.jpg" alt="">
+				</div>
+			</div>
+			<article class="wrap">
+				<div class="breadcrumb">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li>Company</li>
+					</ul>
+				</div>
+			</article>
+
+			<div class="container">
+				<article class="wrap">
+					<h1>Company</h1>
+				</article>
+				<div class="wrapper">
+					<article class="wrap">
+						<section class="company-block" data-aos="fade-up">
+							<div class="company-au">
+								<div class="left">
+									<img src="images/company/company01.jpg" alt="">
+								</div>
+								<div class="right">
+									<h2>Welcome to ANNN YANG</h2>
+									<div class="des">Annn Yang is located in the modern Feng Zhou High Tech Industrial Park in Taichung, Taiwan. Since its inception in 1990, Annn Yang has been developing lathes for the international market, producing precision built machines that are both unique in design and function. Through innovation and aggressive investment in many cutting-edge resources when developing new products, Annn Yang constantly makes advances in the lathe industry. Ann Yang combines experience and strives for perfection to make it a leader in its field. Today we are confident in saying that Annn Yang means excellence.</div>
+								</div>
+							</div>
+						</section>
+					</article>
+					<section class="company-history-block" data-aos="zoom-in">
+						<article class="wrap">
+							<h2>Our History</h2>
+							<ul class="history-all">
+								<li class="list">
+									<div class="history-block">
+										<div class="year">2012</div>
+										<ul class="history-content" data-aos="fade-right">
+											<li>Annn yang moves to its current headquarters at the modern Feng Zhou High Tech Industrial Park.</li>
+											<li>Development of Annn Yang's first auto load robot.</li>
+											<li>Annn Yang celebrates its 10,000th lathe sold.</li>
+										</ul>
+									</div>
+								</li>
+								<li class="list">
+									<div class="history-block">
+										<div class="year">2011</div>
+										<ul class="history-content" data-aos="fade-left">
+											<li>First slant bed lathe developed.</li>
+										</ul>
+									</div>
+								</li>
+								<li class="list">
+									<div class="history-block">
+										<div class="year">2010</div>
+										<ul class="history-content" data-aos="fade-right">
+											<li>Developed a lathe featuring 4 guide ways.</li>
+										</ul>
+									</div>
+								</li>
+								<li class="list">
+									<div class="history-block">
+										<div class="year">2004</div>
+										<ul class="history-content" data-aos="fade-left">
+											<li>Developed vertical milling and turning lathes.</li>
+										</ul>
+									</div>
+								</li>
+								<li class="list">
+									<div class="history-block">
+										<div class="year">2003</div>
+										<ul class="history-content" data-aos="fade-right">
+											<li>Developed a lathe featuring 3 guide ways.</li>
+										</ul>
+									</div>
+								</li>
+								<li class="list">
+									<div class="history-block">
+										<div class="year">1997</div>
+										<ul class="history-content" data-aos="fade-left">
+											<li>Awarded the "Selected Product" prize in the "Fifth Machine Tool R&D and Innovative Products Competition" held by the Taiwan Machinery Industry Association.</li>
+											<li>Development of a larger lathe bed, measuring 692mm.</li>
+										</ul>
+									</div>
+								</li>
+								<li class="list">
+									<div class="history-block">
+										<div class="year">1995</div>
+										<ul class="history-content" data-aos="fade-right">
+											<li>First CNC lathe is developed.</li>
+										</ul>
+									</div>
+								</li>
+								<li class="list">
+									<div class="history-block">
+										<div class="year">1990</div>
+										<ul class="history-content" data-aos="fade-left">
+											<li>Company established in Taichung, Taiwan.</li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</article>
+					</section>
+					<article class="wrap">
+						<section class="company-development-block" data-aos="fade-up">
+							<h2>Market Development</h2>
+							<div class="company-development-content">
+								<div class="left">
+									<p>Annn Yang is an active exhibitor at the biennial TIMTOS show in Taipei and advertises regularly in professional hardware magazines and on the internet.</p>
+									<p>Annn Yang has built a reputation of quality and trust with their client base in Europe, North America and Asia. With sales in over 40 countries worldwide and extensive experience in international law and logistics, Annn Yang has built a solid understanding of the global market and the needs of overseas buyers.</p>
+									<p>Annn Yang has successfully supplied high precision lathes to such distinguished companies as Siemens, Samsung, INTEK Norway, Air New Zealand and Caterpillar Singapore, helping to market Annn Yang as a global supplier of quality machines.</p>
+									<p>Annn Yang strives for excellence, and it is this determination that helps the company produce unique machines that far exceed those of its competitors.</p>
+								</div>
+								<div class="right">
+									<div class="pic"><img src="images/company/company02.jpg" alt=""></div>
+									<div class="pic-des">image name ex: annn yang</div>
+								</div>
+							</div>
+						</section>
+					</article>
+					<article class="wrap">
+						<section class="company-media-block" data-aos="fade-up">
+							<h2>Media</h2>
+							<div id="parentHorizontalTab02">
+								<ul class="company-media-list resp-tabs-list hor_1">
+									<li>Photo Galleries</li>
+									<li>Video</li>
+								</ul>
+								<div class="company-gallery-block">
+									<div class="resp-tabs-container hor_1">
+										<div class="detail-intro">
+											<div class="owl-company owl-carousel owl-theme">
+												<div class="item">
+													<div class="fix-pic">
+														<a href="images/company/media01.jpg" data-fancybox="">
+															<figure class="pic">
+																<img src="images/company/media01.jpg" alt="">
+															</figure>
+														</a>
+													</div>
+												</div>
+												<div class="item">
+													<div class="fix-pic">
+														<a href="images/company/media02.jpg" data-fancybox="">
+															<figure class="pic">
+																<img src="images/company/media02.jpg" alt="">
+															</figure>
+														</a>
+													</div>
+												</div>
+												<div class="item">
+													<div class="fix-pic">
+														<a href="images/company/media03.jpg" data-fancybox="">
+															<figure class="pic">
+																<img src="images/company/media03.jpg" alt="">
+															</figure>
+														</a>
+													</div>
+												</div>
+												<div class="item">
+													<div class="fix-pic">
+														<a href="images/company/media04.jpg" data-fancybox="">
+															<figure class="pic">
+																<img src="images/company/media04.jpg" alt="">
+															</figure>
+														</a>
+													</div>
+												</div>
+												<div class="item">
+													<div class="fix-pic">
+														<a href="images/company/media05.jpg" data-fancybox="">
+															<figure class="pic">
+																<img src="images/company/media05.jpg" alt="">
+															</figure>
+														</a>
+													</div>
+												</div>
+												<div class="item">
+													<div class="fix-pic">
+														<a href="images/company/media05.jpg" data-fancybox="">
+															<figure class="pic">
+																<img src="images/company/media05.jpg" alt="">
+															</figure>
+														</a>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="detail-intro"></div>
+									</div>
+								</div>
+							</div>
+						</section>
+					</article>
+				</div>
+			</div>
+		</main>
+		<footer>
+			<div class="wrap">
+				<div class="footer-info-all">
+					<div class="left">
+						<div class="footer-info-title">
+							<div itemscope itemtype="http://schema.org/LocalBusiness">
+								Contacts <span itemprop="name">Annn Yang</span>
+							</div>
+						</div>
+						<ul class="footer-information">
+							<div itemscope itemtype="http://schema.org/PostalAddress">
+								<li class="ft-information-tel"><a href="tel:+886-4-2527-0198"><span itemprop="telephone">+886-4-2527-0198</span></a></li>
+								<li class="ft-information-mail">
+									<p><a href="mailto:cnc@annnyang.com"><span itemprop="email">cnc@annnyang.com</span></a></p>
+									<p><a href="annnyang@ms23.hinet.net"><span itemprop="email">annnyang@ms23.hinet.net</span></a></p>
+								</li>
+								<li class="ft-information-add">
+								<span itemprop="streetAddress">No.62, Feng Gong S Rd.</span>, <span itemprop="addressLocality">Shen Kang Dist.</span>, <span itemprop="addressRegion">Taichung City</span> <span itemprop="postalCode">42942</span>, <span itemprop="addressCountry">Taiwan</span></li>
+								<div class="ft-social">
+									<div><a href="###"><i class="fab fa-facebook-f"></i></a></div>
+									<div><a href="###"><i class="fab fa-youtube"></i></a></div>
+								</div>
+							</div>
+						</ul>
+					</div>
+					<div class="middle">
+						<div class="footer-info-title">
+							Products
+						</div>
+						<ul class="footer-information">
+							<li><a href="#">CNC Lathes</a></li>
+							<li><a href="#">CNC Slant Bed Lathes</a></li>
+							<li><a href="#">Conventional Lathes</a></li>
+							<li><a href="#">Variable Speed Lathes</a></li>
+							<li><a href="#">Clutch Lathes</a></li>
+							<li><a href="#">Vertical Milling / Turning</a></li>
+							<li><a href="#">High Speed Machine Center</a></li>
+							<li><a href="#">Grinding Machine</a></li>
+							<li><a href="#">Accessories</a></li>
+						</ul>
+					</div>
+					<div class="right">
+						<div class="footer-info-title">
+							Information
+						</div>
+						<ul  class="footer-information">
+							<li><a href="application.html">Application</a></li>
+							<li><a href="solution.html">Turning Solution</a></li>
+							<li><a href="company.html">Company</a></li>
+							<li><a href="news.html">News</a></li>
+							<li><a href="faq.html">FAQ</a></li>
+							<li><a href="contact.html">Contact Us</a></li>
+							<li><a href="sitemap.html">Sitemap</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="copyright">
+					Copyright © 2019 High Energy Technology. All Rights Reserved.
+				</div>
+				<a href="#" class="go-top">
+					<img src="images/gotop-btn.png" alt="">
+				</a>
+			</div>
+		</footer>
+
+		<!-- jquery -->
+		<script src="js/jquery-2.1.0.min.js"></script>
+
+		<link rel="stylesheet" href="js/owlcarousel/assets/owl.carousel.min.css">
+		<link rel="stylesheet" href="js/owlcarousel/assets/owl.theme.default.min.css">
+		<script src="js/owlcarousel/owl.carousel.min.js"></script>
+
+		<link rel="stylesheet" href="js/fancybox/jquery.fancybox.min.css">
+		<script src="js/fancybox/jquery.fancybox.min.js"></script>
+
+		<link rel="stylesheet" href="js/slick-master/slick/slick.css">
+		<script src="js/slick-master/slick/slick.js"></script>
+		<script src="js/slick-master/js/scripts.js"></script>
+
+		<link rel="stylesheet" href="js/venobox/venobox.css">
+		<script src="js/venobox/venobox.min.js"></script>
+
+		<link rel="stylesheet" href="js/banner/responsiveslides.css">
+		<link rel="stylesheet" href="js/banner/themes.css">
+		<script src="js/banner/responsiveslides.min.js"></script>
+
+		<link rel="stylesheet" href="js/tab/easy-responsive-tabs.css">
+		<script src="js/tab/easyResponsiveTabs.js"></script>
+
+		<link rel="stylesheet" href="js/aos/aos.css">
+		<script src="js/aos/aos.js"></script>
+		<script>
+		    AOS.init({
+			    easing: 'ease-in-out-sine',
+			    offset:200,
+			    duration:500,
+		    });
+		</script>	
+
+		<script src="js/jsManage.js"></script>
+	</body>
+</html>

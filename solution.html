@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Template</title>
+		
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=yes,maximum-scale=5.0,minimum-scale=1.0">
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+
+		<link rel="icon" href="images/favicon.ico" type="image/favicon">
+		<link rel="stylesheet" href="css/animate.css">
+		<link rel="stylesheet" href="css/edit.css">
+		<link rel="stylesheet" href="css/cms-header.css">
+		<link rel="stylesheet" href="css/cms-index.css">
+		<link rel="stylesheet" href="css/cms-footer.css">
+		<link rel="stylesheet" href="css/font-awesome/css/all.css">
+	</head>
+
+	<body>
+		<header>
+			<div class="header-menu-top">
+				<div class="menu-bg-top">
+					<a href="index.html" class="logo">
+						<img src="images/logo.png" alt="">
+					</a>
+					<div class="menu-button">
+				        <a href="#" class="fas fa-bars"></a>
+						<a href="#" class="fas fa-times"></a>
+				    </div>
+				</div>
+			    <div class="menu-bg"></div>
+				<nav class="menu menuBasic">
+					<ul class="menu-group">
+						<li class="inquiry">
+							<a href="#">
+								<picture>
+									<source srcset="images/icon/inquiry-rwd.png" media="(max-width: 1024px)">
+									<img src="images/icon/inquiry.png" alt="">
+								</picture>
+							</a>
+						<span class="inquiry_no" id="cart-nums">0</span></li>
+						<li class="menu-search">
+						    <form name="search_form" action="#" method="post">
+						        <a class="search-a" href="#" onclick="chk();">
+					        		<picture>
+										<source srcset="images/icon/search-rwd.png" media="(max-width: 1024px)">
+										<img src="images/icon/search.png" alt="">
+									</picture>
+						        </a>
+						        <div class="search-btn">
+					        		<picture>
+										<source srcset="images/icon/search-rwd.png" media="(max-width: 1024px)">
+										<img src="images/icon/search.png" alt="">
+									</picture>
+					        	</div>
+						        <input type="text" name="pro_name" value="" class="">
+						    </form>
+						</li>
+						<li class="menu-language">
+							<div class="menu-language-btn">
+								<picture>
+									<source srcset="images/icon/lang-rwd.png" media="(max-width: 1024px)">
+									<img src="images/icon/lang.png" alt="">
+								</picture>
+							</div>
+							<div class="menu-language-options">
+								<a href="#">English</a>
+							</div>
+							<div class="menu-language-mobile">
+								<a href="#">EN</a>
+							</div>
+						</li>
+					</ul>
+					<ul class="menu-main">
+						<li>
+							<a href="products.html">Products</a>
+							<div class="menu-all" id="menu-pro">
+								<div class="menu-block-all">
+					                <div>
+					                    <ul class="menu-list">
+					                        <li>
+					                        	<a href="products_detail.html">
+					                        		<div><img src="images/menu-logo/menu-logo-01.png" alt=""></div>
+					                        		<div>CNC Lathes</div>
+					                        	</a>
+					                        </li>
+					                        <li>
+					                        	<a href="products_detail.html">
+					                        		<div><img src="images/menu-logo/menu-logo-02.png" alt=""></div>
+					                        		<div>CNC Slant Bed Lathes</div>
+					                        	</a>
+					                        </li>
+					                        <li>
+					                        	<a href="products_detail.html">
+					                        		<div><img src="images/menu-logo/menu-logo-03.png" alt=""></div>
+					                        		<div>Conventional Lathes</div>
+					                        	</a>
+					                        </li>
+					                        <li>
+					                        	<a href="products_detail.html">
+					                        		<div><img src="images/menu-logo/menu-logo-04.png" alt=""></div>
+					                        		<div>Variable Speed Lathes</div>
+					                        	</a>
+					                        </li>
+					                        <li>
+					                        	<a href="products_detail.html">
+					                        		<div><img src="images/menu-logo/menu-logo-05.png" alt=""></div>
+					                        		<div>Clutch Lathes</div>
+					                        	</a>
+					                        </li>
+					                        <li>
+					                        	<a href="products_detail.html">
+					                        		<div><img src="images/menu-logo/menu-logo-06.png" alt=""></div>
+					                        		<div>Vertical Milling /Turning</div>
+					                        	</a>
+					                        </li>
+					                        <li>
+					                        	<a href="products_detail.html">
+					                        		<div><img src="images/menu-logo/menu-logo-07.png" alt=""></div>
+					                        		<div>High Speed Machine Center</div>
+					                        	</a>
+					                        </li>
+					                        <li>
+					                        	<a href="products_detail.html">
+					                        		<div><img src="images/menu-logo/menu-logo-08.png" alt=""></div>
+					                        		<div>Grinding Machine</div>
+					                        	</a>
+					                        </li>
+					                    </ul>
+					                </div>
+					            </div>
+							</div>
+						</li>
+						<li>
+							<a href="application.html">Application</a>
+							<div class="menu-all" id="menu-app">
+								<div class="menu-block-all">
+					                <div>
+					                    <ul class="menu-list">
+					                        <li>
+					                        	<a href="application.html">
+					                        		<div><img src="images/menu-logo/app-logo-01.png" alt=""></div>
+					                        		<div>Aerospace</div>
+					                        	</a>
+					                        </li>
+					                        <li>
+					                        	<a href="application.html">
+					                        		<div><img src="images/menu-logo/app-logo-02.png" alt=""></div>
+					                        		<div>Energy</div>
+					                        	</a>
+					                        </li>
+					                        <li>
+					                        	<a href="application.html">
+					                        		<div><img src="images/menu-logo/app-logo-03.png" alt=""></div>
+					                        		<div>Steelwork</div>
+					                        	</a>
+					                        </li>
+					                        <li>
+					                        	<a href="application.html">
+					                        		<div><img src="images/menu-logo/app-logo-04.png" alt=""></div>
+					                        		<div>Railway</div>
+					                        	</a>
+					                        </li>
+					                        <li>
+					                        	<a href="application.html">
+					                        		<div><img src="images/menu-logo/app-logo-05.png" alt=""></div>
+					                        		<div>Oil & Gas</div>
+					                        	</a>
+					                        </li>
+					                        <li>
+					                        	<a href="application.html">
+					                        		<div><img src="images/menu-logo/app-logo-06.png" alt=""></div>
+					                        		<div>Roller</div>
+					                        	</a>
+					                        </li>
+					                        <li>
+					                        	<a href="application.html">
+					                        		<div><img src="images/menu-logo/app-logo-07.png" alt=""></div>
+					                        		<div>Naval</div>
+					                        	</a>
+					                        </li>
+					                        <li>
+					                        	<a href="application.html">
+					                        		<div><img src="images/menu-logo/app-logo-08.png" alt=""></div>
+					                        		<div>Industrial machinery</div>
+					                        	</a>
+					                        </li>
+					                        <li>
+					                        	<a href="application.html">
+					                        		<div><img src="images/menu-logo/app-logo-09.png" alt=""></div>
+					                        		<div>Flange</div>
+					                        	</a>
+					                        </li>
+					                    </ul>
+					                </div>
+					            </div>
+							</div>
+						</li>
+						<li><a href="solution.html">Customized Solution</a></li>
+						<li><a href="company.html">Company</a></li>
+						<li><a href="news.html">News</a></li>
+						<li><a href="faq.html">FAQ</a></li>
+						<li><a href="contact.html">Contact Us</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		
+		<main class="main">
+			<div class="in-banner_s">
+				<img src="images/banner/app-banner.jpg" alt="">
+			</div>
+			<article class="wrap">
+				<div class="breadcrumb">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li>Turning Solution</li>
+					</ul>
+				</div>
+			</article>
+
+			<div class="container">
+				<article class="wrap">
+					<h1>Turning Solution</h1>
+				</article>
+				<div class="wrapper">
+					<section class="solution-block gray" id="step1">
+						<article class="wrap">
+							<div class="main-title">
+								<h2>Turning Solutions</h2>
+								<div class="step">
+									<img src="images/solution/solution_step01.png" alt="">
+								</div>
+							</div>
+							<div class="solution-content">
+								<div class="left" data-aos="fade-right">
+									<div class="title">1.  Listening</div>
+									<div class="des">
+										<div>Trying to understand in depth what our customer needs is the most important thing for us to be able to offer the ideal solution. In fact, we believe that it is the most critical phase of the project and we dedicate our best efforts to defining a clear and consensual objective with our customer:</div>
+										<ul>
+											<li>Mix of parts to be processed and features</li>
+											<li>Processes to be performed on these parts and frequencies.</li>
+											<li>Critical aspects of the process and other secondary aspects.</li>
+											<li>Desired balance of time-qualities-tool costs-production shifts-machine life.</li>
+											<li>Operator qualification.</li>
+											<li>Space limitations in facilities, foundations, smoke management, noise, etc.</li>
+											<li>Investment capacity.</li>
+										</ul>
+									</div>
+								</div>
+								<div class="right" data-aos="fade-left">
+									<img src="images/solution/solution01.png" alt="">
+								</div>
+							</div>
+							<div class="scrolldown" id="solution-btn01">
+								<img src="images/solution/scrolldown.png" alt="">
+								<div>2. Proposal</div>
+							</div>
+						</article>	
+					</section>
+					<section class="solution-block white" id="step2">
+						<article class="wrap">
+							<div class="main-title">
+								<h2>Turning Solutions</h2>
+								<div class="step">
+									<img src="images/solution/solution_step02.png" alt="">
+								</div>
+							</div>
+							<div class="solution-content">
+								<div class="right" data-aos="fade-right">
+									<img src="images/solution/solution02.png" alt="">
+								</div>
+								<div class="left" data-aos="fade-left">
+									<div class="title">2. Proposal</div>
+									<div class="des">
+										<div>We look at each requirement in depth, we analyse alternatives, we discuss pros and cons ... until we design a solution that synthesises the answers to each need. This will be the time to propose a first solution to the client and open a dialogue until we reach the optimal contractual and operational architecture:</div>
+										<ul>
+											<li>Balanced machining processes.</li>
+											<li>Selection of tools and costs.</li>
+											<li>Design of PLC systems.</li>
+											<li>Ideal machine layout.</li>
+											<li>Installation requirements and other auxiliary elements.</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="scrolldown" id="solution-btn02">
+								<img src="images/solution/scrolldown.png" alt="">
+								<div>3.Solution</div>
+							</div>
+						</article>	
+					</section>
+					<section class="solution-block gray" id="step3">
+						<article class="wrap">
+							<div class="main-title">
+								<h2>Turning Solutions</h2>
+								<div class="step">
+									<img src="images/solution/solution_step03.png" alt="">
+								</div>
+							</div>
+							<div class="solution-content">
+								<div class="left" data-aos="fade-right">
+									<div class="title">3. Solution</div>
+									<div class="des">
+										<div>However, we know that however much care we have taken to listen to our customer’s requirements and have proposed the best solution, there are aspects that need to be refined in this critical phase of conceptualisation of the solution. To visualise these concepts, we prepare 3D models of the proposal, we simulate machining processes and show them on video, we can develop a ROI analysis, so that, in the dialogue with the customer, we agree on a solution that satisfies their quality, cost and deadline requirements.</div>
+									</div>
+								</div>
+								<div class="right" data-aos="fade-left">
+									<img src="images/solution/solution03.png" alt="">
+								</div>
+							</div>
+							<div class="scrolldown" id="solution-btn03">
+								<img src="images/solution/scrolldown.png" alt="">
+								<div>4. Execution</div>
+							</div>
+						</article>	
+					</section>
+					<section class="solution-block white" id="step4">
+						<article class="wrap">
+							<div class="main-title">
+								<h2>Turning Solutions</h2>
+								<div class="step">
+									<img src="images/solution/solution_step04.png" alt="">
+								</div>
+							</div>
+							<div class="solution-content">
+								<div class="right" data-aos="fade-right">
+									<img src="images/solution/solution04.png" alt="">
+								</div>
+								<div class="left" data-aos="fade-left">
+									<div class="title">4. Execution</div>
+									<div class="des">
+										<div>Once the right turning solution has been made clear and agreed, our Mechanical Engineering Dept. develops the machine models and the corresponding assembly plans, in order for the customer to approve them. This will be the time when our expert engineering and production team carries out its work:</div>
+										<ul>
+											<li>Experienced partners for our cast and mechanically-welded parts (European suppliers only), closely monitored by demanding GURUTZPE professionals.</li>
+											<li>We only include leading brands of commercial components.</li>
+											<li>Expert and multidisciplinary assembly teams.</li>
+											<li>Software programming customised to the customer’s needs.</li>
+											<li>CE user and maintenance documentation, detailed and easy to use.</li>
+											<li>Training provided by experienced engineers, with special empathy towards the future operators of the machine.</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="scrolldown" id="solution-btn04">
+								<img src="images/solution/scrolldown.png" alt="">
+								<div>5. Operation</div>
+							</div>
+						</article>	
+					</section>
+					<section class="solution-block gray" id="step5">
+						<article class="wrap">
+							<div class="main-title">
+								<h2>Turning Solutions</h2>
+								<div class="step">
+									<img src="images/solution/solution_step05.png" alt="">
+								</div>
+							</div>
+							<div class="solution-content">
+								<div class="left" data-aos="fade-right">
+									<div class="title">5. Operation</div>
+									<div class="des">
+										<div>Once the machine is available in perfect working order, it is time to reach the required full production in the shortest possible time. GURUTZPE offers it knowledge and experience so that together with specific knowledge of the customer’s process on its products, the machine operators can quickly become independent and achieve the highest productivity levels:</div>
+										<ul>
+											<li>Training and production support in the first few working days.</li>
+											<li>Support in the programming of machining of various parts.</li>
+											<li>Spare parts management and preventive maintenance service.</li>
+											<li>Online assistance with queries during the next few weeks.</li>
+										</ul>
+									</div>
+								</div>
+								<div class="right" data-aos="fade-left">
+									<img src="images/solution/solution05.png" alt="">
+								</div>
+							</div>
+							<div class="scrolldown" id="solution-btn05">
+								<img src="images/solution/scrolldown.png" alt="">
+								<div>6. Results</div>
+							</div>
+						</article>	
+					</section>
+					<section class="solution-block white" id="step6">
+						<article class="wrap">
+							<div class="main-title">
+								<h2>Turning Solutions</h2>
+								<div class="step">
+									<img src="images/solution/solution_step06.png" alt="">
+								</div>
+							</div>
+							<div class="solution-content">
+								<div class="right" data-aos="fade-right">
+									<div class="solution-form">
+										<div class="solution-form-all">
+											<div class="solution-form-left">
+												<div class="row">
+													<div class="formTh">
+														Name
+													</div>
+													<div class="formTd">
+														<input name="cu_name" type="text" id="cu_name" value=""  placeholder="">
+													</div>
+												</div>
+												<div class="row">
+													<div class="formTh">
+														Phone
+													</div>
+													<div class="formTd">
+														<input name="cu_tel" type="tel" id="cu_tel" value=""  placeholder="">
+													</div>
+												</div>
+												<div class="row">
+													<div class="formTh">
+														Company
+													</div>
+													<div class="formTd">
+														<input name="cu_company_name" type="text" id="cu_company_name" value=""  placeholder="">
+													</div>
+												</div>
+											</div>
+											<div class="solution-form-right">
+												<div class="row">
+													<div class="formTh">
+														E-mail
+													</div>
+													<div class="formTd">
+														<input name="cu_email" type="email" id="cu_email" value=""  placeholder="">
+													</div>
+												</div>
+												<div class="row">
+													<div class="formTh">
+														Country
+													</div>
+													<div class="formTd">
+														<input name="cu_country" type="text" id="cu_country" value=""  placeholder="">
+													</div>
+												</div>
+												
+												<div class="row">
+													<div class="formTh">
+														Address
+													</div>
+													<div class="formTd">
+														<input name="cu_address" type="text" id="cu_address" value=""  placeholder="">
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="row tab-content">
+											<div class="formTh">
+												Message
+											</div>
+											<div class="formTd">
+												<textarea name="#" id="#" class="validate[required]" cols="50" rows="12" placeholder=""></textarea>
+											</div>
+										</div>
+										<div class="certification">
+											<img src="images/certificate.jpg" alt=""/>
+										</div>
+										<div class="form-Btn">
+								        	<input name="Send" type="submit" class="btn-send" value="Send" id="Send" class="btn btn-send" />
+								        	<input name="" type="reset" class="btn-reset" value="Clean"/>
+										</div>
+									</div>
+								</div>
+								<div class="left" data-aos="fade-left">
+									<div class="title">6. Results</div>
+									<div class="des">
+										<div>Our machines are designed to have minimum maintenance costs. Our machine availability standards after one year are historically excellent. <br>
+										<span>Send products inquiry to us now!</span></div>
+										<ul>
+											<li>Our machines are designed to have minimum maintenance costs. Our machine availability standards after one year are historically excellent.</li>
+											<li>We have a wide stock of spare parts to minimise machine stoppages in the event of any problems.</li>
+											<li>Our service team will attend to you in record time, whether by telephone, remote service or by visiting your facility in person.</li>
+											<li>The service life of GURUTZPE machines is very long and can reach up to 40 years even when working in harsh conditions.</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</article>	
+					</section>
+				</div>
+			</div>
+		</main>
+		<footer>
+			<div class="wrap">
+				<div class="footer-info-all">
+					<div class="left">
+						<div class="footer-info-title">
+							<div itemscope itemtype="http://schema.org/LocalBusiness">
+								Contacts <span itemprop="name">Annn Yang</span>
+							</div>
+						</div>
+						<ul class="footer-information">
+							<div itemscope itemtype="http://schema.org/PostalAddress">
+								<li class="ft-information-tel"><a href="tel:+886-4-2527-0198"><span itemprop="telephone">+886-4-2527-0198</span></a></li>
+								<li class="ft-information-mail">
+									<p><a href="mailto:cnc@annnyang.com"><span itemprop="email">cnc@annnyang.com</span></a></p>
+									<p><a href="annnyang@ms23.hinet.net"><span itemprop="email">annnyang@ms23.hinet.net</span></a></p>
+								</li>
+								<li class="ft-information-add">
+								<span itemprop="streetAddress">No.62, Feng Gong S Rd.</span>, <span itemprop="addressLocality">Shen Kang Dist.</span>, <span itemprop="addressRegion">Taichung City</span> <span itemprop="postalCode">42942</span>, <span itemprop="addressCountry">Taiwan</span></li>
+								<div class="ft-social">
+									<div><a href="###"><i class="fab fa-facebook-f"></i></a></div>
+									<div><a href="###"><i class="fab fa-youtube"></i></a></div>
+								</div>
+							</div>
+						</ul>
+					</div>
+					<div class="middle">
+						<div class="footer-info-title">
+							Products
+						</div>
+						<ul class="footer-information">
+							<li><a href="#">CNC Lathes</a></li>
+							<li><a href="#">CNC Slant Bed Lathes</a></li>
+							<li><a href="#">Conventional Lathes</a></li>
+							<li><a href="#">Variable Speed Lathes</a></li>
+							<li><a href="#">Clutch Lathes</a></li>
+							<li><a href="#">Vertical Milling / Turning</a></li>
+							<li><a href="#">High Speed Machine Center</a></li>
+							<li><a href="#">Grinding Machine</a></li>
+							<li><a href="#">Accessories</a></li>
+						</ul>
+					</div>
+					<div class="right">
+						<div class="footer-info-title">
+							Information
+						</div>
+						<ul  class="footer-information">
+							<li><a href="application.html">Application</a></li>
+							<li><a href="solution.html">Turning Solution</a></li>
+							<li><a href="company.html">Company</a></li>
+							<li><a href="news.html">News</a></li>
+							<li><a href="faq.html">FAQ</a></li>
+							<li><a href="contact.html">Contact Us</a></li>
+							<li><a href="sitemap.html">Sitemap</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="copyright">
+					Copyright © 2019 High Energy Technology. All Rights Reserved.
+				</div>
+				<a href="#" class="go-top">
+					<img src="images/gotop-btn.png" alt="">
+				</a>
+			</div>
+		</footer>
+
+		<!-- jquery -->
+		<script src="js/jquery-2.1.0.min.js"></script>
+
+		<link rel="stylesheet" href="js/owlcarousel/assets/owl.carousel.min.css">
+		<link rel="stylesheet" href="js/owlcarousel/assets/owl.theme.default.min.css">
+		<script src="js/owlcarousel/owl.carousel.min.js"></script>
+
+		<link rel="stylesheet" href="js/fancybox/jquery.fancybox.min.css">
+		<script src="js/fancybox/jquery.fancybox.min.js"></script>
+
+		<link rel="stylesheet" href="js/slick-master/slick/slick.css">
+		<script src="js/slick-master/slick/slick.js"></script>
+		<script src="js/slick-master/js/scripts.js"></script>
+
+		<link rel="stylesheet" href="js/venobox/venobox.css">
+		<script src="js/venobox/venobox.min.js"></script>
+
+		<link rel="stylesheet" href="js/banner/responsiveslides.css">
+		<link rel="stylesheet" href="js/banner/themes.css">
+		<script src="js/banner/responsiveslides.min.js"></script>
+
+		<link rel="stylesheet" href="js/tab/easy-responsive-tabs.css">
+		<script src="js/tab/easyResponsiveTabs.js"></script>
+
+		<link rel="stylesheet" href="js/aos/aos.css">
+		<script src="js/aos/aos.js"></script>
+		<script>
+		    AOS.init({
+			    easing: 'ease-in-out-sine',
+			    offset:200,
+			    duration:500,
+		    });
+		</script>	
+
+		<script src="js/jsManage.js"></script>
+	</body>
+</html>

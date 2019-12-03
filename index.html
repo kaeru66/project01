@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Template</title>
+		
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=yes,maximum-scale=5.0,minimum-scale=1.0">
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+
+		<link rel="icon" href="images/favicon.ico" type="image/favicon">
+		<link rel="stylesheet" href="css/animate.css">
+		<link rel="stylesheet" href="css/edit.css">
+		<link rel="stylesheet" href="css/cms-header.css">
+		<link rel="stylesheet" href="css/index.css">
+		<link rel="stylesheet" href="css/cms-footer.css">
+		<link rel="stylesheet" href="css/font-awesome/css/all.css">
+	</head>
+
+	<body>
+		<header>
+			<div class="header-menu-top">
+				<div class="menu-bg-top">
+					<a href="index.html" class="logo">
+						<img src="images/logo.png" alt="">
+					</a>
+					<div class="menu-button">
+				        <a href="#" class="fas fa-bars"></a>
+						<a href="#" class="fas fa-times"></a>
+				    </div>
+				</div>
+			    <div class="menu-bg"></div>
+				<nav class="menu menuBasic">
+					<ul class="menu-group">
+						<li class="inquiry">
+							<a href="#">
+								<picture>
+									<source srcset="images/icon/inquiry-rwd.png" media="(max-width: 1024px)">
+									<img src="images/icon/inquiry.png" alt="">
+								</picture>
+							</a>
+						<span class="inquiry_no" id="cart-nums">0</span></li>
+						<li class="menu-search">
+						    <form name="search_form" action="#" method="post">
+						        <a class="search-a" href="#" onclick="chk();">
+					        		<picture>
+										<source srcset="images/icon/search-rwd.png" media="(max-width: 1024px)">
+										<img src="images/icon/search.png" alt="">
+									</picture>
+						        </a>
+						        <div class="search-btn">
+					        		<picture>
+										<source srcset="images/icon/search-rwd.png" media="(max-width: 1024px)">
+										<img src="images/icon/search.png" alt="">
+									</picture>
+					        	</div>
+						        <input type="text" name="pro_name" value="" class="">
+						    </form>
+						</li>
+						<li class="menu-language">
+							<div class="menu-language-btn">
+								<picture>
+									<source srcset="images/icon/lang-rwd.png" media="(max-width: 1024px)">
+									<img src="images/icon/lang.png" alt="">
+								</picture>
+							</div>
+							<div class="menu-language-options">
+								<a href="#">English</a>
+							</div>
+							<div class="menu-language-mobile">
+								<a href="#">EN</a>
+							</div>
+						</li>
+					</ul>
+					<ul class="menu-main">
+						<li>
+							<a href="products.html">Products</a>
+							<div class="menu-all" id="menu-pro">
+								<div class="menu-block-all">
+					                <div>
+					                    <ul class="menu-list">
+					                        <li>
+					                        	<a href="products_detail.html">
+					                        		<div><img src="images/menu-logo/menu-logo-01.png" alt=""></div>
+					                        		<div>CNC Lathes</div>
+					                        	</a>
+					                        </li>
+					                        <li>
+					                        	<a href="products_detail.html">
+					                        		<div><img src="images/menu-logo/menu-logo-02.png" alt=""></div>
+					                        		<div>CNC Slant Bed Lathes</div>
+					                        	</a>
+					                        </li>
+					                        <li>
+					                        	<a href="products_detail.html">
+					                        		<div><img src="images/menu-logo/menu-logo-03.png" alt=""></div>
+					                        		<div>Conventional Lathes</div>
+					                        	</a>
+					                        </li>
+					                        <li>
+					                        	<a href="products_detail.html">
+					                        		<div><img src="images/menu-logo/menu-logo-04.png" alt=""></div>
+					                        		<div>Variable Speed Lathes</div>
+					                        	</a>
+					                        </li>
+					                        <li>
+					                        	<a href="products_detail.html">
+					                        		<div><img src="images/menu-logo/menu-logo-05.png" alt=""></div>
+					                        		<div>Clutch Lathes</div>
+					                        	</a>
+					                        </li>
+					                        <li>
+					                        	<a href="products_detail.html">
+					                        		<div><img src="images/menu-logo/menu-logo-06.png" alt=""></div>
+					                        		<div>Vertical Milling /Turning</div>
+					                        	</a>
+					                        </li>
+					                        <li>
+					                        	<a href="products_detail.html">
+					                        		<div><img src="images/menu-logo/menu-logo-07.png" alt=""></div>
+					                        		<div>High Speed Machine Center</div>
+					                        	</a>
+					                        </li>
+					                        <li>
+					                        	<a href="products_detail.html">
+					                        		<div><img src="images/menu-logo/menu-logo-08.png" alt=""></div>
+					                        		<div>Grinding Machine</div>
+					                        	</a>
+					                        </li>
+					                    </ul>
+					                </div>
+					            </div>
+							</div>
+						</li>
+						<li>
+							<a href="application.html">Application</a>
+							<div class="menu-all" id="menu-app">
+								<div class="menu-block-all">
+					                <div>
+					                    <ul class="menu-list">
+					                        <li>
+					                        	<a href="application.html">
+					                        		<div><img src="images/menu-logo/app-logo-01.png" alt=""></div>
+					                        		<div>Aerospace</div>
+					                        	</a>
+					                        </li>
+					                        <li>
+					                        	<a href="application.html">
+					                        		<div><img src="images/menu-logo/app-logo-02.png" alt=""></div>
+					                        		<div>Energy</div>
+					                        	</a>
+					                        </li>
+					                        <li>
+					                        	<a href="application.html">
+					                        		<div><img src="images/menu-logo/app-logo-03.png" alt=""></div>
+					                        		<div>Steelwork</div>
+					                        	</a>
+					                        </li>
+					                        <li>
+					                        	<a href="application.html">
+					                        		<div><img src="images/menu-logo/app-logo-04.png" alt=""></div>
+					                        		<div>Railway</div>
+					                        	</a>
+					                        </li>
+					                        <li>
+					                        	<a href="application.html">
+					                        		<div><img src="images/menu-logo/app-logo-05.png" alt=""></div>
+					                        		<div>Oil & Gas</div>
+					                        	</a>
+					                        </li>
+					                        <li>
+					                        	<a href="application.html">
+					                        		<div><img src="images/menu-logo/app-logo-06.png" alt=""></div>
+					                        		<div>Roller</div>
+					                        	</a>
+					                        </li>
+					                        <li>
+					                        	<a href="application.html">
+					                        		<div><img src="images/menu-logo/app-logo-07.png" alt=""></div>
+					                        		<div>Naval</div>
+					                        	</a>
+					                        </li>
+					                        <li>
+					                        	<a href="application.html">
+					                        		<div><img src="images/menu-logo/app-logo-08.png" alt=""></div>
+					                        		<div>Industrial machinery</div>
+					                        	</a>
+					                        </li>
+					                        <li>
+					                        	<a href="application.html">
+					                        		<div><img src="images/menu-logo/app-logo-09.png" alt=""></div>
+					                        		<div>Flange</div>
+					                        	</a>
+					                        </li>
+					                    </ul>
+					                </div>
+					            </div>
+							</div>
+						</li>
+						<li><a href="solution.html">Customized Solution</a></li>
+						<li><a href="company.html">Company</a></li>
+						<li><a href="news.html">News</a></li>
+						<li><a href="faq.html">FAQ</a></li>
+						<li><a href="contact.html">Contact Us</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		
+		<main class="main">
+			<div class="index-banner">
+				<div class="owl-index owl-carousel owl-theme">
+					<div class="item">
+						<div class="banner-pc">
+							<img src="images/banner/index_banner.jpg" alt="">
+						</div>
+						<div class="banner-mobile">
+							<img src="images/banner/index-banner-rwd.jpg" alt="">
+						</div>
+					</div>
+					<div class="item">
+						<div class="banner-pc">
+							<img src="images/banner/index_banner.jpg" alt="">
+						</div>
+						<div class="banner-mobile">
+							<img src="images/banner/index-banner-rwd.jpg" alt="">
+						</div>
+					</div>
+					<div class="item">
+						<div class="banner-pc">
+							<img src="images/banner/index_banner.jpg" alt="">
+						</div>
+						<div class="banner-mobile">
+							<img src="images/banner/index-banner-rwd.jpg" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="container">
+				<section class="idx-application-all">
+					<article class="wrap" data-aos="fade-up">
+						<h1><span>Annn Yang</span> as an experienced CNC and Manual lathe manufacturer,</h1>
+						<div class="idx-intro">
+							providing stable and outstanding solutions to our<br>customers from different industries.
+						</div>
+						<div class="idx-application-block">
+							<div class="owl-aerospace owl-carousel owl-theme">
+								<div class="item">
+									<a href="application.html">
+										<img src="images/index/idx-application-icon01.png" alt="">
+										<h3>Aerospace</h3>
+									</a>
+								</div>
+								<div class="item">
+									<a href="application.html">
+										<img src="images/index/idx-application-icon02.png" alt="">
+										<h3>Energy</h3>
+									</a>
+								</div>
+								<div class="item">
+									<a href="application.html">
+										<img src="images/index/idx-application-icon03.png" alt="">
+										<h3>Steelwork</h3>
+									</a>
+								</div>
+								<div class="item">
+									<a href="application.html">
+										<img src="images/index/idx-application-icon04.png" alt="">
+										<h3>Railway</h3>
+									</a>
+								</div>
+								<div class="item">
+									<a href="application.html">
+										<img src="images/index/idx-application-icon05.png" alt="">
+										<h3>Oil & Gas</h3>
+									</a>
+								</div>
+								<div class="item">
+									<a href="application.html">
+										<img src="images/index/idx-application-icon06.png" alt="">
+										<h3>Roller</h3>
+									</a>
+								</div>
+								<div class="item">
+									<a href="application.html">
+										<img src="images/index/idx-application-icon07.png" alt="">
+										<h3>Naval</h3>
+									</a>
+								</div>
+								<div class="item">
+									<a href="application.html">
+										<img src="images/index/idx-application-icon08.png" alt="">
+										<h3>Industrial machinery</h3>
+									</a>
+								</div>
+								<div class="item">
+									<a href="application.html">
+										<img src="images/index/idx-application-icon09.png" alt="">
+										<h3>Flange</h3>
+									</a>
+								</div>
+							</div>
+						</div>
+					</article>
+				</section>
+			</div>
+
+			<section class="idx-solution-all">
+				<article class="wrap" data-aos="fade-up">
+					<div class="idx-solution-block">
+						<div class="idx-solution-pic">
+							<img src="images/index/idx-solution-pic.jpg" alt="">
+						</div>
+						<h2>High Energy Technology</h2>
+						<div class="idx-solution-content">
+							Annn Yang is located in the modern Feng Zhou High Tech Industrial Park in Taichung, Taiwan. Since its inception in 1990, Annn Yang has been developing lathes for the international market, producing precision built machines that are both unique in design and function. Through innovation and aggressive investment in many cutting-edge resources when developing new products, Annn Yang constantly makes advances in the lathe industry Annn Yang is located in the modern Feng Zhou High Tech Industrial Park in Taichung, Taiwan. Since its inception in 1990, Annn Yang has been developing lathes for the international market, producing precision built machines that are both unique in design and function. Through innovation and aggressive investment in many cutting-edge resources when developing new products, Annn Yang constantly makes advances in the lathe industry..
+						</div>
+						<div class="idx-solution-btn"><a href="solution.html"><span>More Solution</span></a></div>
+					</div>
+				</article>
+			</section>
+
+			<section class="idx-block">
+				<article class="wrap">
+					<div class="idx-products-all" data-aos="zoom-in">
+						<div class="idx-products-block">
+							<div class="idx-products-pic">
+								<a href="products.html"><img src="images/index/idx-products01.jpg" alt=""></a>
+							</div>
+							<div class="idx-products-des">
+								<div class="pic">
+									<img src="images/index/idx-products-icon01.png" alt="">
+								</div>
+								<div class="title">Products</div>
+								<div class="des">ANNN YANG provides special requested application, customized specification such as Y axis, B axis, big spindle bore, hydraulic tailstock, auto tool pre-setter, double chuck, double turret.</div>
+								<a href="products.html" class="link"></a>
+							</div>
+						</div>
+
+						<div class="idx-products-block">
+							<div class="idx-products-pic">
+								<a href="application.html"><img src="images/index/idx-products02.jpg" alt=""></a>
+							</div>
+							<div class="idx-products-des">
+								<div class="pic">
+									<img src="images/index/idx-products-icon02.png" alt="">
+								</div>
+								<div class="title">Application</div>
+								<div class="des">Annn Yang is located in the modern Feng Zhou High Tech Industrial Park in Taichung, Taiwan. Since its inception in 1990, Annn Yang has been developing lathes for the international market, producing precision built machines that are both unique in design and function. Through innovation and aggressive investment in many cutting-edge resources when developing new products, Annn Yang constantly makes advances in the lathe industry.</div>
+								<a href="application.html" class="link"></a>
+							</div>
+						</div>
+
+						<div class="idx-products-block">
+							<div class="idx-products-pic">
+								<a href="products.html"><img src="images/index/idx-products03.jpg" alt=""></a>
+							</div>
+							<div class="idx-products-des">
+								<div class="pic">
+									<img src="images/index/idx-products-icon03.png" alt="">
+								</div>
+								<div class="title">Accessories</div>
+								<div class="des">Annn Yang is located in the modern Feng Zhou High Tech Industrial Park in Taichung, Taiwan. Since its inception in 1990, Annn Yang has been developing lathes for the international market, producing precision built machines that are both unique in design and function. Through innovation and aggressive investment in many cutting-edge resources when developing new products, Annn Yang constantly makes advances in the lathe industry.</div>
+								<a href="products.html" class="link"></a>
+							</div>
+						</div>
+
+					</div>
+					<div class="idx-about-all" data-aos="fade-up">
+						<h2>About Annn Yang</h2>
+						<div class="idx-about-block">
+							<div class="right-pic"><img src="images/index/idx-about.jpg" alt=""></div>
+							<div class="left">
+								<h3>High Energy Technology</h3>
+								Annn Yang is located in the modern Feng Zhou High Tech Industrial Park in Taichung, Taiwan. Since its inception in 1990, Annn Yang has been developing lathes for the international market, producing precision built machines that are both unique in design and function. Through innovation and aggressive investment in many cutting-edge resources when developing new products, Annn Yang constantly makes advances in the lathe industry.
+								<div class="idx-about-btn"><a href="company.html"><span>More About Us</span></a></div>
+							</div>
+							<div class="right"></div>
+						</div>
+					</div>
+
+					<div class="idx-news-all" data-aos="fade-up">
+						<h2>Latest News</h2>
+						<div class="idx-news-block-all">
+							<div class="idx-news-block">
+								<div class="pic">
+									<img src="images/index/idx-news01.jpg" alt="">
+								</div>
+								<div class="date">12/31/2019</div>
+								<div class="title">News title ex: Special application- B axis</div>
+								<div class="content">Roller for steel reinforcement bars / rebarRoller for steel reinforcement bars / rebar</div>
+							</div>
+							<div class="idx-news-block">
+								<div class="pic">
+									<img src="images/index/idx-news02.jpg" alt="">
+								</div>
+								<div class="date">12/31/2019</div>
+								<div class="title">News title ex: Special application- B axis</div>
+								<div class="content">Roller for steel reinforcement bars / rebarRoller for steel reinforcement bars / rebar</div>
+							</div>
+							<div class="idx-news-block">
+								<div class="pic">
+									<img src="images/index/idx-news03.jpg" alt="">
+								</div>
+								<div class="date">12/31/2019</div>
+								<div class="title">News title ex: Special application- B axis</div>
+								<div class="content">Roller for steel reinforcement bars / rebarRoller for steel reinforcement bars / rebar</div>
+							</div>
+						</div>
+						<div class="idx-news-btn"><a href="news.html"><span>See All News</span></a></div>
+					</div>
+				</article>
+			</section>
+		</main>
+		<footer>
+			<div class="wrap">
+				<div class="footer-info-all">
+					<div class="left">
+						<div class="footer-info-title">
+							<div itemscope itemtype="http://schema.org/LocalBusiness">
+								Contacts <span itemprop="name">Annn Yang</span>
+							</div>
+						</div>
+						<ul class="footer-information">
+							<div itemscope itemtype="http://schema.org/PostalAddress">
+								<li class="ft-information-tel"><a href="tel:+886-4-2527-0198"><span itemprop="telephone">+886-4-2527-0198</span></a></li>
+								<li class="ft-information-mail">
+									<p><a href="mailto:cnc@annnyang.com"><span itemprop="email">cnc@annnyang.com</span></a></p>
+									<p><a href="annnyang@ms23.hinet.net"><span itemprop="email">annnyang@ms23.hinet.net</span></a></p>
+								</li>
+								<li class="ft-information-add">
+								<span itemprop="streetAddress">No.62, Feng Gong S Rd.</span>, <span itemprop="addressLocality">Shen Kang Dist.</span>, <span itemprop="addressRegion">Taichung City</span> <span itemprop="postalCode">42942</span>, <span itemprop="addressCountry">Taiwan</span></li>
+								<div class="ft-social">
+									<div><a href="###"><i class="fab fa-facebook-f"></i></a></div>
+									<div><a href="###"><i class="fab fa-youtube"></i></a></div>
+								</div>
+							</div>
+						</ul>
+					</div>
+					<div class="middle">
+						<div class="footer-info-title">
+							Products
+						</div>
+						<ul class="footer-information">
+							<li><a href="#">CNC Lathes</a></li>
+							<li><a href="#">CNC Slant Bed Lathes</a></li>
+							<li><a href="#">Conventional Lathes</a></li>
+							<li><a href="#">Variable Speed Lathes</a></li>
+							<li><a href="#">Clutch Lathes</a></li>
+							<li><a href="#">Vertical Milling / Turning</a></li>
+							<li><a href="#">High Speed Machine Center</a></li>
+							<li><a href="#">Grinding Machine</a></li>
+							<li><a href="#">Accessories</a></li>
+						</ul>
+					</div>
+					<div class="right">
+						<div class="footer-info-title">
+							Information
+						</div>
+						<ul  class="footer-information">
+							<li><a href="application.html">Application</a></li>
+							<li><a href="solution.html">Turning Solution</a></li>
+							<li><a href="company.html">Company</a></li>
+							<li><a href="news.html">News</a></li>
+							<li><a href="faq.html">FAQ</a></li>
+							<li><a href="contact.html">Contact Us</a></li>
+							<li><a href="sitemap.html">Sitemap</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="copyright">
+					Copyright © 2019 High Energy Technology. All Rights Reserved.
+				</div>
+				<a href="#" class="go-top">
+					<img src="images/gotop-btn.png" alt="">
+				</a>
+			</div>
+		</footer>
+
+		<!-- jquery -->
+		<script src="js/jquery-2.1.0.min.js"></script>
+
+		<link rel="stylesheet" href="js/owlcarousel/assets/owl.carousel.min.css">
+		<link rel="stylesheet" href="js/owlcarousel/assets/owl.theme.default.min.css">
+		<script src="js/owlcarousel/owl.carousel.min.js"></script>
+
+		<link rel="stylesheet" href="js/fancybox/jquery.fancybox.min.css">
+		<script src="js/fancybox/jquery.fancybox.min.js"></script>
+
+		<link rel="stylesheet" href="js/slick-master/slick/slick.css">
+		<script src="js/slick-master/slick/slick.js"></script>
+		<script src="js/slick-master/js/scripts.js"></script>
+
+		<link rel="stylesheet" href="js/venobox/venobox.css">
+		<script src="js/venobox/venobox.min.js"></script>
+
+		<link rel="stylesheet" href="js/banner/responsiveslides.css">
+		<link rel="stylesheet" href="js/banner/themes.css">
+		<script src="js/banner/responsiveslides.min.js"></script>
+
+		<link rel="stylesheet" href="js/tab/easy-responsive-tabs.css">
+		<script src="js/tab/easyResponsiveTabs.js"></script>
+
+		<link rel="stylesheet" href="js/aos/aos.css">
+		<script src="js/aos/aos.js"></script>
+		<script>
+		    AOS.init({
+			    easing: 'ease-in-out-sine',
+			    offset:200,
+			    duration:500,
+		    });
+		</script>	
+
+		<script src="js/jsManage.js"></script>
+	</body>
+</html>
